@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "exportedAt": 1751673600000,
+  "questions": [
+    {
+      "id": "s1",
+      "type": "single-choice",
+      "category": "JavaScript",
+      "tags": ["闭包", "作用域"],
+      "prompt": "以下关于闭包（Closure）的描述，正确的是？",
+      "explanation": "闭包是指函数能够记住并访问其词法作用域，即使该函数在其词法作用域之外执行。这是 JavaScript 最强大的特性之一。",
+      "options": ["函数内部的函数", "函数能访问外部作用域变量的能力", "函数返回另一个函数", "箭头函数的简写"],
+      "correctIndex": 1,
+      "createdAt": 1751673600000,
+      "updatedAt": 1751673600000
+    },
+    {
+      "id": "s2",
+      "type": "single-choice",
+      "category": "JavaScript",
+      "tags": ["Promise", "异步"],
+      "prompt": "Promise.resolve(1).then(v => v + 1).then(v => console.log(v)) 输出什么？",
+      "explanation": "第一个 then 返回 2（1+1），第二个 then 接收到 2 并打印。",
+      "options": ["1", "2", "undefined", "Promise"],
+      "correctIndex": 1,
+      "createdAt": 1751673600000,
+      "updatedAt": 1751673600000
+    },
+    {
+      "id": "s3",
+      "type": "single-choice",
+      "category": "操作系统",
+      "tags": ["进程", "死锁"],
+      "prompt": "死锁的四个必要条件是？",
+      "explanation": "死锁四个必要条件：互斥条件、请求与保持、不可剥夺、循环等待。破坏任一条件即可预防死锁。",
+      "options": [
+        "互斥、请求保持、不可剥夺、循环等待",
+        "互斥、同步、异步、阻塞",
+        "请求、分配、释放、等待",
+        "就绪、运行、阻塞、终止"
+      ],
+      "correctIndex": 0,
+      "createdAt": 1751673600000,
+      "updatedAt": 1751673600000
+    },
+    {
+      "id": "m1",
+      "type": "multi-choice",
+      "category": "计算机网络",
+      "tags": ["TCP", "UDP", "传输层"],
+      "prompt": "以下关于 TCP 和 UDP 的说法，正确的有哪些？",
+      "explanation": "TCP 是面向连接、可靠的传输协议，有流量控制和拥塞控制。UDP 是无连接、不可靠的，但开销小、速度快，适合音视频等实时应用。",
+      "options": [
+        "TCP 是面向连接的",
+        "UDP 提供可靠传输保证",
+        "TCP 有流量控制机制",
+        "UDP 头部开销比 TCP 小"
+      ],
+      "correctIndices": [0, 2, 3],
+      "createdAt": 1751673600000,
+      "updatedAt": 1751673600000
+    },
+    {
+      "id": "m2",
+      "type": "multi-choice",
+      "category": "数据结构",
+      "tags": ["排序", "算法"],
+      "prompt": "以下哪些排序算法的平均时间复杂度是 O(n log n)？",
+      "explanation": "快速排序、归并排序、堆排序的平均时间复杂度都是 O(n log n)。冒泡排序和插入排序是 O(n²)。",
+      "options": ["快速排序", "冒泡排序", "归并排序", "插入排序"],
+      "correctIndices": [0, 2],
+      "createdAt": 1751673600000,
+      "updatedAt": 1751673600000
+    },
+    {
+      "id": "f1",
+      "type": "fill-in-blank",
+      "category": "JavaScript",
+      "tags": ["ES6", "变量"],
+      "prompt": "ES6 中，使用 ____ 关键字声明的变量具有块级作用域，且不能被重新赋值。",
+      "explanation": "const 声明常量，let 声明变量。两者都具有块级作用域，但 const 不能被重新赋值。",
+      "acceptableAnswers": ["const", "Const", "CONST"],
+      "caseSensitive": false,
+      "createdAt": 1751673600000,
+      "updatedAt": 1751673600000
+    },
+    {
+      "id": "f2",
+      "type": "fill-in-blank",
+      "category": "计算机网络",
+      "tags": ["HTTP"],
+      "prompt": "HTTP 状态码 ____ 表示「未找到」资源。",
+      "explanation": "HTTP 404 表示服务器找不到请求的资源。常见状态码：200 成功、301/302 重定向、403 禁止、500 服务器错误。",
+      "acceptableAnswers": ["404"],
+      "caseSensitive": true,
+      "createdAt": 1751673600000,
+      "updatedAt": 1751673600000
+    },
+    {
+      "id": "a1",
+      "type": "short-answer",
+      "category": "数据结构",
+      "tags": ["链表", "基础"],
+      "prompt": "简述数组和链表的主要区别，以及各自的适用场景。",
+      "explanation": "核心区别在于内存分配方式（连续 vs 离散）以及由此导致的访问效率和插入删除效率的差异。",
+      "modelAnswer": "数组在内存中连续存储，支持 O(1) 随机访问，但插入和删除需要移动元素 O(n)。适合读多写少的场景。链表节点在内存中离散存储，通过指针连接，不支持随机访问（O(n)），但插入和删除是 O(1)。适合频繁增删的场景。",
+      "keyPoints": ["连续内存 vs 离散内存", "O(1)随机访问 vs O(n)", "插入删除 O(n) vs O(1)", "适用场景举例"],
+      "createdAt": 1751673600000,
+      "updatedAt": 1751673600000
+    },
+    {
+      "id": "a2",
+      "type": "short-answer",
+      "category": "操作系统",
+      "tags": ["进程", "线程"],
+      "prompt": "简述进程和线程的区别。",
+      "explanation": "进程是资源分配的基本单位，线程是CPU调度的基本单位。",
+      "modelAnswer": "进程是操作系统资源分配的基本单位，每个进程有独立的地址空间和系统资源。线程是CPU调度的基本单位，同一进程的多个线程共享进程的资源（内存、文件等）。线程切换开销小于进程切换。多线程编程需考虑同步问题。",
+      "keyPoints": ["进程是资源分配单位，线程是调度单位", "进程独立地址空间，线程共享", "线程切换开销更小", "线程需要注意同步"],
+      "createdAt": 1751673600000,
+      "updatedAt": 1751673600000
+    }
+  ]
+}
